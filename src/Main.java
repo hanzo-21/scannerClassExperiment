@@ -1,10 +1,6 @@
-import javax.sql.rowset.serial.SerialStruct;
-import java.io.File;
-import java.io.FileNotFoundException;
+
 import java.util.LinkedList;
-import java.util.List;
-import java.util.Scanner;
-import java.util.regex.Pattern;
+
 
 public class Main {
     public static void main(String[] args) {

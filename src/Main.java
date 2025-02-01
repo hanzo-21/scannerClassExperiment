@@ -8,32 +8,12 @@ import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = null;
-        LinkedList<String> names = new LinkedList<>();
         String fileName = "\\D:\\drive\\OneDrive - Everest Engineering College\\skills\\scanner experimant\\testfiel" +
                 ".txt";
 
-        try{
-            scanner = new Scanner( new File(fileName));
-            String filter ;
-            scanner.useDelimiter(",");
+        LinkedList<String> names = getfile.getNames(fileName);
 
-
-            while (scanner.hasNext()){
-                filter = scanner.next();
-                filter =  filter.trim();
-                names.add(filter);
-
-
-            }
-            System.out.println(names);
-
-
-        } catch (FileNotFoundException e) {
-            System.out.println(e);
-        }
-
-        scanner.close();
+        System.out.println(names);
 
 
 

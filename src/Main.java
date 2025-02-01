@@ -7,7 +7,7 @@ public class Main {
         String fileName = "\\D:\\drive\\OneDrive - Everest Engineering College\\skills\\scanner experimant\\testfiel" +
                 ".txt";
 
-        LinkedList<String> names = getfile.getNames(fileName);
+        LinkedList<String> names = getfile.Lines(fileName);
 
         System.out.println(names);
 
